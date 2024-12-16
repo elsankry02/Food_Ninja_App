@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+
 import '../../../core/utils/color_manger.dart';
 import '../../../core/utils/text_manger.dart';
 import '../../../core/utils/widget/custom_button_widget.dart';
@@ -39,6 +40,7 @@ class _SignupPageState extends State<SignupPage> {
           const SizedBox(
             height: 40,
           ),
+          //! User name
           const TextFieldSignInWidget(
             labelText: 'Anamwp . . |',
             assetIcon: "assets/svg/Profile.svg",
@@ -46,6 +48,7 @@ class _SignupPageState extends State<SignupPage> {
           const SizedBox(
             height: 12,
           ),
+          //! email
           const TextFieldSignInWidget(
             labelText: 'Email',
             assetIcon: 'assets/svg/Message.svg',
@@ -53,6 +56,7 @@ class _SignupPageState extends State<SignupPage> {
           const SizedBox(
             height: 12,
           ),
+          //! Password
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25),
             child: TextField(
@@ -105,6 +109,7 @@ class _SignupPageState extends State<SignupPage> {
           ),
           Column(
             children: [
+              //! bottom
               GestureDetector(
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(

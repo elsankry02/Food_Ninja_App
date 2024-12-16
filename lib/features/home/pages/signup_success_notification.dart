@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import '../../../core/utils/text_manger.dart';
 import '../../../core/utils/widget/custom_button_widget.dart';
-import 'widget/success_notification_widget.dart';
 import '../../tabs/salomon_nav_bar.dart';
+import 'widget/success_notification_widget.dart';
 
 class SignupSuccessNotificationPage extends StatelessWidget {
   const SignupSuccessNotificationPage({super.key});

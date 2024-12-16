@@ -9,7 +9,7 @@ class ChangeThemeCubit extends Cubit<ChangeThemeState> {
 
   Future<void> setChangeTheme({required bool value}) async {
     await CacheHelper.setTheme(value: value);
-    emit(ThemeIsDark(value));
+    emit(ThemeIsDark(isDark: value));
   }
 
   bool? getTheme() {

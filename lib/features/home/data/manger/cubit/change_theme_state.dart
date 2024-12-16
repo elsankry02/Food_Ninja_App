@@ -7,5 +7,7 @@ final class ChangeThemeInitial extends ChangeThemeState {}
 final class ThemeIsDark extends ChangeThemeState {
   final bool isDark;
 
-  ThemeIsDark(this.isDark);
+  ThemeIsDark({required this.isDark});
+
+
 }

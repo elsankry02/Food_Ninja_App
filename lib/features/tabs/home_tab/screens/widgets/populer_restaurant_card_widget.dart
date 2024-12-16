@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 import '../../../../../core/utils/text_manger.dart';
 
 class PopulerRestaurantCardWidget extends StatelessWidget {

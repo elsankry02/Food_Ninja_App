@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+
 import '../../../../../core/utils/color_manger.dart';
 import '../../../../../core/utils/text_manger.dart';
 import '../../screens/widgets/quantity_counter_widget.dart';

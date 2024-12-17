@@ -22,8 +22,8 @@ class NinjaFood extends StatelessWidget {
       child: BlocBuilder<ChangeThemeCubit, ChangeThemeState>(
         builder: (context, state) {
           final themeIsDark = state is ThemeIsDark ? state.isDark : false;
-          final themeSaved =
-              BlocProvider.of<ChangeThemeCubit>(context).getTheme();
+          final themeSaved = context.read<ChangeThemeCubit>().getTheme();
+
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(

@@ -1,23 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import '../../../../core/utils/text_manger.dart';
-import '../../../../core/utils/widget/custom_button_widget.dart';
-import '../signup_success_notification.dart';
-import '../via_method_page.dart';
-import '../widget/container_social_widget.dart';
-import '../widget/logo_login_widget.dart';
-import '../widget/text_field_login_widget.dart';
 
-class SigninPage extends StatelessWidget {
-  const SigninPage({super.key});
+import '../../../../components/custom_button_widget.dart';
+import '../../../../components/custom_text_field_widget.dart';
+import '../../../../constant/text_manger.dart';
+import '../signup_success_notification/signup_success_notification.dart';
+import '../via_method_page/via_method_page.dart';
+import 'widget/logo_login_widget.dart';
+import 'widget/social_connection_widget.dart';
+
+class SignInPage extends StatelessWidget {
+  const SignInPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-      ),
-    );
     return Scaffold(
       body: ListView(
         padding: EdgeInsets.zero,
@@ -29,13 +24,13 @@ class SigninPage extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
-          const TextFieldLoginWidget(
+          const CustomTextFieldWidget(
             hintText: 'Email',
           ),
           const SizedBox(
             height: 12,
           ),
-          const TextFieldLoginWidget(
+          const CustomTextFieldWidget(
             hintText: 'Password',
           ),
           const SizedBox(
@@ -52,14 +47,14 @@ class SigninPage extends StatelessWidget {
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CountainerSocialWidget(
+              SocialConnectionWidget(
                 textSocial: 'Facebook',
                 imageSocial: 'assets/svg/facebook.svg',
               ),
               SizedBox(
                 width: 21,
               ),
-              CountainerSocialWidget(
+              SocialConnectionWidget(
                 textSocial: 'Google',
                 imageSocial: 'assets/svg/google.svg',
               ),

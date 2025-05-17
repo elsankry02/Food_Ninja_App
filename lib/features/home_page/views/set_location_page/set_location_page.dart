@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../../../core/utils/text_manger.dart';
-import '../../../../core/utils/widget/custom_button_widget.dart';
-import '../widget/top_appbar_widget.dart';
-import '../../../tabs/salomon_nav_bar.dart';
+
+import '../../../../components/custom_button_widget.dart';
+import '../../../../components/custom_top_appbar_widget.dart';
+import '../../../../constant/text_manger.dart';
+import '../navbar_page/navbar_page.dart';
 
 class SetLocationPage extends StatelessWidget {
   const SetLocationPage({super.key});
@@ -12,17 +12,10 @@ class SetLocationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-      ),
-    );
-
     return Scaffold(
       body: Column(
         children: [
-          const TopAppbarPopWidget(
+          const CustomTopAppBarBackNavigator(
             titel: 'Set Your Location',
             supTitel:
                 'This data will be displayed in your account \nprofile for security',
@@ -81,7 +74,7 @@ class SetLocationPage extends StatelessWidget {
           GestureDetector(
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => const SalomonNavBar(),
+                builder: (context) => const NavBarPage(),
               ),
             ),
             child: const CustomButtonWidget(textButton: 'Try Order'),

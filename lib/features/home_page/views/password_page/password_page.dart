@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../../../core/utils/color_manger.dart';
-import '../../../../core/utils/text_manger.dart';
-import '../../../../core/utils/widget/custom_button_widget.dart';
-import '../success_notification_page.dart';
-import '../widget/top_appbar_widget.dart';
+
+import '../../../../components/custom_button_widget.dart';
+import '../../../../components/custom_top_appbar_widget.dart';
+import '../../../../constant/color_manger.dart';
+import '../../../../constant/text_manger.dart';
+import '../success_notification_page/success_notification_page.dart';
 
 class PasswordPage extends StatefulWidget {
   const PasswordPage({super.key});
@@ -18,14 +19,13 @@ class _PasswordPageState extends State<PasswordPage> {
 
   @override
   Widget build(BuildContext context) {
-    
     final theme = Theme.of(context);
     return Scaffold(
       body: SafeArea(
         child: ListView(
           physics: const BouncingScrollPhysics(),
           children: [
-            const TopAppbarPopWidget(
+            const CustomTopAppBarBackNavigator(
                 titel: 'Reset your password \nhere',
                 supTitel:
                     'Select which contact details should we \nuse to reset your password'),

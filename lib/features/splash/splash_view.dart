@@ -1,9 +1,8 @@
 // ignore_for_file: use_build_context_synchronously
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:food_ninga/core/utils/assets_manger.dart';
-import 'package:food_ninga/core/utils/text_manger.dart';
-import 'package:food_ninga/features/on_boarding/page/onboarding_page.dart';
+import 'package:food_ninga/constant/assets_manger.dart';
+import 'package:food_ninga/constant/text_manger.dart';
+import 'package:food_ninga/features/on_boarding/onboarding_page.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -34,9 +33,6 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-    );
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

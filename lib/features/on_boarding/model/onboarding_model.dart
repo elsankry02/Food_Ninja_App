@@ -1,4 +1,4 @@
-import '../../../core/utils/assets_manger.dart';
+import '../../../constant/assets_manger.dart';
 
 class OnBoardingModel {
   final dynamic image;

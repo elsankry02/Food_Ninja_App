@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../../../components/custom_main_appbar_widget.dart';
-import 'notification_card_widget.dart';
+import '../widgets/notification_card_widget.dart';
 
 class NotifiactionScreen extends StatelessWidget {
   const NotifiactionScreen({super.key});

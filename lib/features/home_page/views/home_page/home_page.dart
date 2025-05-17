@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninga/features/home_page/views/home_page/data/model/nearest_restaurant_model.dart';
 
-import 'widgets/appbar_home_screen.dart';
-import 'widgets/home_container_image.dart';
+import 'view/appbar_home.dart';
+import 'view/home_container_image.dart';
 import 'widgets/navigator_nearest_restaurant_widget.dart';
 import 'widgets/navigator_populer_menu_widget.dart';
 import 'widgets/populer_card_menu_widget.dart';
 import 'widgets/resturant_card_widget.dart';
-import 'widgets/voucher_promo_screen.dart';
+import 'view/voucher_promo_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -18,7 +19,7 @@ class HomePage extends StatelessWidget {
         padding: EdgeInsets.zero,
         physics: const BouncingScrollPhysics(),
         children: [
-          const AppbarHomeScreen(),
+          const AppbarHome(),
           GestureDetector(
             onTap: () => Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => const VoucherPromoScreen(),
@@ -34,32 +35,16 @@ class HomePage extends StatelessWidget {
           ),
           SizedBox(
             height: 184,
-            child: ListView(
+            child: ListView.builder(
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.only(left: 25),
               scrollDirection: Axis.horizontal,
-              children: const [
-                ResturantCardWidget(
-                  imageCard: 'assets/images/ResturantVagan.png',
-                  titelText: 'Vegan Resto',
-                  supTitel: '12 Mins',
-                ),
-                ResturantCardWidget(
-                  imageCard: 'assets/images/Restaurant_Cheef.png',
-                  titelText: 'Vegan Resto',
-                  supTitel: '8 Mins',
-                ),
-                ResturantCardWidget(
-                  imageCard: 'assets/images/ResturantVagan.png',
-                  titelText: 'Vegan Resto',
-                  supTitel: '12 Mins',
-                ),
-                ResturantCardWidget(
-                  imageCard: 'assets/images/Restaurant_Cheef.png',
-                  titelText: 'Vegan Resto',
-                  supTitel: '8 Mins',
-                ),
-              ],
+              itemCount: items.length,
+              itemBuilder: (context, index) {
+                return ResturantCardWidget(
+                  index: index,
+                );
+              },
             ),
           ),
           const SizedBox(

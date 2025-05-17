@@ -4,9 +4,9 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
-import 'card_textimonials_widget.dart';
-import 'populer_menu_profile_widget.dart';
-import 'top_details_widget.dart';
+import '../widgets/card_textimonials_widget.dart';
+import '../widgets/populer_menu_profile_widget.dart';
+import '../widgets/top_details_widget.dart';
 
 class DetailproductScreen extends StatefulWidget {
   const DetailproductScreen({super.key});

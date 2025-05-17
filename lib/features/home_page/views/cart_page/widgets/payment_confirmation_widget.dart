@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
-import 'payment_cart_screen.dart';
+import '../view/payment_cart_screen.dart';
 
 class PaymentConfirmationWidget extends StatelessWidget {
   const PaymentConfirmationWidget({super.key, required this.style14Medium});

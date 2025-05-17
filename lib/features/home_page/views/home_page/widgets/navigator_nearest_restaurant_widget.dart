@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
-import 'explore_restaurant_screen.dart';
+import '../view/explore_restaurant_screen.dart';
 
 class NavigatorNearestRestaurantWidget extends StatelessWidget {
   const NavigatorNearestRestaurantWidget({

@@ -9,8 +9,8 @@ import '../../../data/cubit/change_theme_cubit.dart';
 import 'notifiaction_screen.dart';
 import 'search_screen.dart';
 
-class AppbarHomeScreen extends StatelessWidget {
-  const AppbarHomeScreen({
+class AppbarHome extends StatelessWidget {
+  const AppbarHome({
     super.key,
   });
 

@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
-import 'notifiaction_screen.dart';
+import '../view/notifiaction_screen.dart';
 
 class TextFieldSearchScreenWidget extends StatelessWidget {
   const TextFieldSearchScreenWidget({

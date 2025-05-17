@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
-import 'popular_menu_screen.dart';
+import '../view/popular_menu_screen.dart';
 
 class NavigatorPopulerMenuWidget extends StatelessWidget {
   const NavigatorPopulerMenuWidget({

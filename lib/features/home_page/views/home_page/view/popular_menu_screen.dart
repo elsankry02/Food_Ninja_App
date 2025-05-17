@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
 import 'home_tab_appbar.dart';
-import 'populer_card_menu_widget.dart';
+import '../widgets/populer_card_menu_widget.dart';
 
 class PopularMenuScreen extends StatelessWidget {
   const PopularMenuScreen({super.key});

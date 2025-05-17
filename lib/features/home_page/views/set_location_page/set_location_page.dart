@@ -36,7 +36,7 @@ class SetLocationPage extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 20, left: 10),
                   child: Row(
                     children: [
-                      SvgPicture.asset('assets/svg/Pin Logo.svg'),
+                      SvgPicture.asset('assets/svg/Pin_Logo.svg'),
                       const SizedBox(
                         width: 14,
                       ),

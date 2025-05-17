@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../components/custom_main_appbar_widget.dart';
 import '../../../../../constant/color_manger.dart';
-import 'card_order_voucher_widget.dart';
+import '../widgets/card_order_voucher_widget.dart';
 
 class VoucherPromoScreen extends StatelessWidget {
   const VoucherPromoScreen({

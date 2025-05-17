@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../components/custom_main_appbar_widget.dart';
-import 'pyment_cart_widget.dart';
+import '../widgets/pyment_cart_widget.dart';
 
 class EditPaymentsScreen extends StatefulWidget {
   const EditPaymentsScreen({super.key});

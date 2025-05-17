@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
 import 'home_tab_appbar.dart';
-import 'populer_restaurant_card_widget.dart';
+import '../widgets/populer_restaurant_card_widget.dart';
 
 class ExploreRestaurantScreen extends StatelessWidget {
   const ExploreRestaurantScreen({super.key});

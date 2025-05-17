@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../constant/text_manger.dart';
-import 'widgets/detail_menu_screen.dart';
-import 'widgets/detail_product_screen.dart';
+import 'view/detail_menu_screen.dart';
+import 'view/detail_product_screen.dart';
 import 'widgets/massage_profile_widget.dart';
-import 'widgets/profile_scroll_mode.dart';
+import 'view/profile_scroll_mode.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});

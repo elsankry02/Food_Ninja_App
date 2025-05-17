@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
-import 'textfield_search_screen_widget.dart';
+import '../widgets/textfield_search_screen_widget.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});

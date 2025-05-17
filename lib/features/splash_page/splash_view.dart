@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninga/constant/assets_manger.dart';
 import 'package:food_ninga/constant/text_manger.dart';
-import 'package:food_ninga/features/on_boarding/onboarding_page.dart';
+import 'package:food_ninga/features/onboarding_page/onboarding_page.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

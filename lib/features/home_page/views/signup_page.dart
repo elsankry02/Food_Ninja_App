@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import '../../../core/utils/color_manger.dart';
 import '../../../core/utils/text_manger.dart';
 import '../../../core/utils/widget/custom_button_widget.dart';
-import 'signin_page.dart';
+import 'sign_in_page/sign_in_page.dart';
 import 'signup_process_page.dart';
 import 'widget/check_circler_sharp.dart';
 import 'widget/logo_login_widget.dart';

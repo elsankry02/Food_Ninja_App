@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../../core/utils/text_manger.dart';
 import '../../../core/utils/widget/custom_button_widget.dart';
-import 'set_location_page.dart';
+import 'set_location_page/set_location_page.dart';
 import 'upload_preview_page.dart';
 import 'widget/top_appbar_widget.dart';
 

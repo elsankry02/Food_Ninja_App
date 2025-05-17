@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../../core/utils/color_manger.dart';
-import '../../../core/utils/text_manger.dart';
-import '../../../core/utils/widget/custom_button_widget.dart';
-import 'success_notification_page.dart';
-import 'widget/top_appbar_widget.dart';
+import '../../../../core/utils/color_manger.dart';
+import '../../../../core/utils/text_manger.dart';
+import '../../../../core/utils/widget/custom_button_widget.dart';
+import '../success_notification_page.dart';
+import '../widget/top_appbar_widget.dart';
 
 class PasswordPage extends StatefulWidget {
   const PasswordPage({super.key});

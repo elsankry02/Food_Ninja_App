@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../../core/utils/text_manger.dart';
-import '../../../core/utils/widget/custom_button_widget.dart';
-import 'widget/top_appbar_widget.dart';
-import '../../tabs/salomon_nav_bar.dart';
+import '../../../../core/utils/text_manger.dart';
+import '../../../../core/utils/widget/custom_button_widget.dart';
+import '../widget/top_appbar_widget.dart';
+import '../../../tabs/salomon_nav_bar.dart';
 
 class SetLocationPage extends StatelessWidget {
   const SetLocationPage({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../core/utils/widget/custom_button_widget.dart';
-import 'payment_method_page.dart';
+import 'payment_method_page/payment_method_page.dart';
 import 'widget/text_field_login_widget.dart';
 import 'widget/top_appbar_widget.dart';
 

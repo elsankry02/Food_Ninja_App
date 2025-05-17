@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../core/utils/color_manger.dart';
 import '../../../../core/utils/text_manger.dart';
-import '../../../home/data/manger/cubit/change_theme_cubit.dart';
+import '../../../home_page/data/cubit/change_theme_cubit.dart';
 import 'notifiaction_screen.dart';
 import 'search_screen.dart';
 

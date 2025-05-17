@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../../core/utils/text_manger.dart';
-import '../../../core/utils/widget/custom_button_widget.dart';
-import 'signup_success_notification.dart';
-import 'via_method_page.dart';
-import 'widget/container_social_widget.dart';
-import 'widget/logo_login_widget.dart';
-import 'widget/text_field_login_widget.dart';
+import '../../../../core/utils/text_manger.dart';
+import '../../../../core/utils/widget/custom_button_widget.dart';
+import '../signup_success_notification.dart';
+import '../via_method_page.dart';
+import '../widget/container_social_widget.dart';
+import '../widget/logo_login_widget.dart';
+import '../widget/text_field_login_widget.dart';
 
 class SigninPage extends StatelessWidget {
   const SigninPage({super.key});

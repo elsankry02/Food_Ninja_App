@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../../core/utils/widget/custom_button_widget.dart';
-import 'upload_photo_page.dart';
-import 'widget/top_appbar_widget.dart';
+import '../../../../core/utils/widget/custom_button_widget.dart';
+import '../upload_photo_page.dart';
+import '../widget/top_appbar_widget.dart';
 
 class PaymentMethodPage extends StatelessWidget {
   const PaymentMethodPage({super.key});

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../core/utils/color_manger.dart';
 import '../../../core/utils/text_manger.dart';
-import '../../home/pages/signup_page.dart';
+import '../../home_page/views/signup_page.dart';
 import '../model/onboarding_model.dart';
 
 class OnboardingPage extends StatefulWidget {

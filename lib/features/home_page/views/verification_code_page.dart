@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../../../core/utils/text_manger.dart';
 import '../../../core/utils/widget/custom_button_widget.dart';
-import 'password_page.dart';
+import 'password_page/password_page.dart';
 import 'widget/top_appbar_widget.dart';
 
 class VerificationCodePage extends StatelessWidget {

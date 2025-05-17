@@ -16,35 +16,37 @@ class _CartPageState extends State<CartPage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              Image.asset(
-                'assets/images/PatternTopRight.png',
-                width: double.infinity,
-                fit: BoxFit.cover,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const SizedBox(
-                      height: 50,
-                    ),
-                    Text(
-                      'Cart',
-                      style: TextManger.textstyle25Bold
-                          .copyWith(color: theme.hintColor),
-                    ),
-                  ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                Image.asset(
+                  'assets/images/PatternTopRight.png',
+                  width: double.infinity,
+                  fit: BoxFit.cover,
                 ),
-              ),
-            ],
-          ),
-          const ShowModalBottomSheetWidget(),
-        ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(
+                        height: 50,
+                      ),
+                      Text(
+                        'Cart',
+                        style: TextManger.textstyle25Bold
+                            .copyWith(color: theme.hintColor),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const ShowModalBottomSheetWidget(),
+          ],
+        ),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import '../../../../constant/text_manger.dart';
 import 'widgets/caht_details_anamwp_page.dart';
 import 'widgets/caht_details_guyhawkins_page.dart';
@@ -11,11 +11,6 @@ class Chat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-      ),
-    );
     return Scaffold(
       body: Stack(
         children: [

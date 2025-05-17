@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import 'widgets/appbar_home_screen.dart';
-import 'widgets/voucher_promo_screen.dart';
 import 'widgets/home_container_image.dart';
 import 'widgets/navigator_nearest_restaurant_widget.dart';
 import 'widgets/navigator_populer_menu_widget.dart';
 import 'widgets/populer_card_menu_widget.dart';
 import 'widgets/resturant_card_widget.dart';
+import 'widgets/voucher_promo_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-    );
     return Scaffold(
       body: ListView(
         padding: EdgeInsets.zero,

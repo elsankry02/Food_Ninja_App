@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninga/components/custom_button_widget.dart';
+import 'package:food_ninga/features/local_home_page/views/sign_up_page/sign_up_page.dart';
 
 import '../../constant/text_manger.dart';
-import '../home_page/views/sign_up_page/sign_up_page.dart';
 import 'model/onboarding_model.dart';
 
 class OnboardingPage extends StatefulWidget {
@@ -34,14 +34,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   currentIndex = value;
                 });
               },
-              itemCount: items.length,
+              itemCount: onboardingItems.length,
               itemBuilder: (context, index) => Column(
                 children: [
                   const SizedBox(
                     height: 50,
                   ),
                   Image.asset(
-                    items[index].image,
+                    onboardingItems[index].image,
                     width: double.infinity,
                     fit: BoxFit.fill,
                   ),
@@ -50,7 +50,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ),
                   Text(
                     textAlign: TextAlign.center,
-                    items[index].subTitel,
+                    onboardingItems[index].subTitel,
                     style: TextManger.textstyle22Bold,
                   ),
                   const SizedBox(
@@ -58,7 +58,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ),
                   Text(
                     textAlign: TextAlign.center,
-                    items[index].titel,
+                    onboardingItems[index].titel,
                     style: TextManger.textStyle12Book,
                   ),
                   const SizedBox(
@@ -70,7 +70,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ),
           GestureDetector(
             onTap: () {
-              if (currentIndex == items.length - 1) {
+              if (currentIndex == onboardingItems.length - 1) {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const SignUpPage(),

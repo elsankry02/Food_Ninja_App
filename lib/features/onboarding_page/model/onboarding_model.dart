@@ -9,7 +9,7 @@ class OnBoardingModel {
       {required this.image, required this.subTitel, required this.titel});
 }
 
-final List<OnBoardingModel> items = [
+final List<OnBoardingModel> onboardingItems = [
   OnBoardingModel(
     image: AssetsManger.kIllustartionCandy,
     subTitel: 'Find your Comfort\nFood here',

@@ -39,7 +39,8 @@ class _CartPageState extends State<CartPage> {
                       style: TextManger.textstyle25Bold
                           .copyWith(color: theme.hintColor),
                     ),
-                    Expanded(
+                    SizedBox(
+                      height: 700,
                       child: GridView.builder(
                         scrollDirection: Axis.vertical,
                         gridDelegate:
@@ -49,6 +50,7 @@ class _CartPageState extends State<CartPage> {
                         itemBuilder: (context, index) {
                           return PopulerRestaurantCardWidget(
                             index: index,
+                            right: 0,
                           );
                         },
                       ),

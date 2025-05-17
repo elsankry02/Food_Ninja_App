@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_ninga/features/home/views/home_page/data/model/nearest_restaurant_model.dart';
+import 'package:food_ninga/features/home/views/home_page/data/model/populer_restaurant_card_model.dart';
+import 'package:food_ninga/features/home/views/home_page/widgets/populer_restaurant_card_widget.dart';
 
 import 'view/appbar_home.dart';
 import 'view/home_container_image.dart';
@@ -7,7 +8,6 @@ import 'view/voucher_promo_screen.dart';
 import 'widgets/navigator_nearest_restaurant_widget.dart';
 import 'widgets/navigator_populer_menu_widget.dart';
 import 'widgets/populer_card_menu_widget.dart';
-import 'widgets/resturant_card_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -39,10 +39,11 @@ class HomePage extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.only(left: 25),
               scrollDirection: Axis.horizontal,
-              itemCount: restaurantList.length,
+              itemCount: populerRestaurantCardModel.length,
               itemBuilder: (context, index) {
-                return ResturantCardWidget(
+                return PopulerRestaurantCardWidget(
                   index: index,
+                  right: 40,
                 );
               },
             ),

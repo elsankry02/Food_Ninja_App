@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_ninga/features/home/views/home_page/data/model/populer_restaurant_card_model.dart';
+import 'package:food_ninga/features/home/views/home_page/widgets/populer_restaurant_card_widget.dart';
 
 import '../../../../../constant/color_manger.dart';
 import '../../../../../constant/text_manger.dart';
@@ -84,21 +86,19 @@ class ExploreRestaurantScreen extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          // Expanded(
-          //   child: ListView(
-          //     children: const [
-          //       PopulerRestaurantCardWidget(),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       PopulerRestaurantCardWidget(),
-          //       SizedBox(
-          //         height: 20,
-          //       ),
-          //       PopulerRestaurantCardWidget(),
-          //     ],
-          //   ),
-          // )
+          Expanded(
+            child: GridView.builder(
+              itemCount: populerRestaurantCardModel.length,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2),
+              itemBuilder: (context, index) {
+                return PopulerRestaurantCardWidget(
+                  index: index,
+                  right: 0,
+                );
+              },
+            ),
+          )
         ],
       ),
     );

@@ -45,4 +45,7 @@ class ImageManger {
   static const kRestourantImage1 = 'assets/images/Restaurant_Image_1.png';
   static const kRestourantImage2 = 'assets/images/Restaurant_Image_2.png';
   static const kRestourantImage3 = 'assets/images/Restaurant_Image_3.png';
+  static const kOne = 'assets/images/one.png';
+  static const kTwo = 'assets/images/two.png';
+  static const kThree = 'assets/images/three.png';
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninga/components/custom_button_widget.dart';
-import 'package:food_ninga/features/local_home_page/views/sign_up_page/sign_up_page.dart';
+import 'package:food_ninga/features/home/views/sign_up_page/sign_up_page.dart';
 
 import '../../constant/text_manger.dart';
 import 'model/onboarding_model.dart';
@@ -81,8 +81,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   duration: const Duration(milliseconds: 300),
                   curve: Curves.linear);
             },
-            child: const CustomButtonWidget(
-              textButton: 'Next',
+            child: const UnconstrainedBox(
+              child: CustomButtonWidget(
+                textButton: 'Next',
+                horizontal: 60,
+              ),
             ),
           ),
           const SizedBox(

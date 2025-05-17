@@ -1,4 +1,4 @@
-import '../../../constant/assets_manger.dart';
+import '../../../constant/image_manger.dart';
 
 class OnBoardingModel {
   final dynamic image;
@@ -11,13 +11,13 @@ class OnBoardingModel {
 
 final List<OnBoardingModel> onboardingItems = [
   OnBoardingModel(
-    image: AssetsManger.kIllustartionCandy,
+    image: ImageManger.kIllustartionCandy,
     subTitel: 'Find your Comfort\nFood here',
     titel:
         'Here You Can find a chef or dish for every\n taste and color. Enjoy!',
   ),
   OnBoardingModel(
-    image: AssetsManger.kIllustartionBerger,
+    image: ImageManger.kIllustartionBerger,
     subTitel: 'Food Ninja is Where Your\n Comfort Food Lives',
     titel: 'Enjoy a fast and smooth food delivery at\n your doorstep',
   ),

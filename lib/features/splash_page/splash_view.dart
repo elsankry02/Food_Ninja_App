@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 import 'package:flutter/material.dart';
-import 'package:food_ninga/constant/assets_manger.dart';
+import 'package:food_ninga/constant/image_manger.dart';
 import 'package:food_ninga/constant/text_manger.dart';
 import 'package:food_ninga/features/onboarding_page/onboarding_page.dart';
 
@@ -38,12 +38,12 @@ class _SplashViewState extends State<SplashView> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Image.asset(
-            AssetsManger.kPattern,
+            ImageManger.kPattern,
             fit: BoxFit.fill,
           ),
           Image.asset(
             height: 150,
-            AssetsManger.kLogo,
+            ImageManger.kLogo,
           ),
           const Text(
               textAlign: TextAlign.center,

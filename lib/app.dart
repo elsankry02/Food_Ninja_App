@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_ninga/constant/color_manger.dart';
-import 'package:food_ninga/features/local_home_page/data/cubit/change_theme_cubit.dart';
+import 'package:food_ninga/features/home/data/cubit/change_theme_cubit.dart';
 import 'package:food_ninga/features/splash_page/splash_view.dart';
 
 class FoodNinja extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constant/assets_manger.dart';
+import '../constant/image_manger.dart';
 import '../constant/text_manger.dart';
 
 class CustomFoodNinjaLogoWidget extends StatelessWidget {
@@ -15,12 +15,12 @@ class CustomFoodNinjaLogoWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Image.asset(
-            AssetsManger.kPattern,
+            ImageManger.kPattern,
             fit: BoxFit.fill,
           ),
           Image.asset(
             height: 150,
-            AssetsManger.kLogo,
+            ImageManger.kLogo,
           ),
           const Text(
               textAlign: TextAlign.center,

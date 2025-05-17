@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../constant/assets_manger.dart';
+import '../constant/image_manger.dart';
 
 class CustomSuccessNotificationWidget extends StatelessWidget {
   const CustomSuccessNotificationWidget({super.key});
@@ -11,7 +11,7 @@ class CustomSuccessNotificationWidget extends StatelessWidget {
     return Stack(
       children: [
         Image.asset(
-          AssetsManger.kPattern,
+          ImageManger.kPattern,
           fit: BoxFit.fill,
           width: double.infinity,
         ),

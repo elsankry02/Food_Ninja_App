@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'constant/color_manger.dart';
 import 'features/home_page/data/cubit/change_theme_cubit.dart';
 import 'features/splash_page/splash_view.dart';
@@ -19,9 +20,9 @@ class FoodNinja extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
-                scaffoldBackgroundColor: const Color(0xfffef7ff),
-                cardColor: const Color(0xffF6F6F6),
-                focusColor: const Color(0xfffef5ec),
+                scaffoldBackgroundColor: ColorManger.kMaterialWhiteColor,
+                cardColor: ColorManger.kMaterialWhiteColor,
+                focusColor: ColorManger.kMaterialWhiteColor,
                 primaryColor: ColorManger.kMaterialWhiteColor,
                 hintColor: Colors.black),
             themeMode:

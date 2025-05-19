@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_ninga/constant/text_manger.dart';
+import '../constant/text_manger.dart';
 
 class CustomChatCallWidget extends StatelessWidget {
   const CustomChatCallWidget(

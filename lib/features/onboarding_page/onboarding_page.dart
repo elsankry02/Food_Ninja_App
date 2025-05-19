@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_ninga/components/custom_button_widget.dart';
-import 'package:food_ninga/features/home/views/sign_up_page/sign_up_page.dart';
+import '../../components/custom_button_widget.dart';
+import '../sign_up_page/sign_up_page.dart';
 
 import '../../constant/text_manger.dart';
 import 'model/onboarding_model.dart';

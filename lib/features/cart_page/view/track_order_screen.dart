@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_ninga/constant/image_manger.dart';
 
 import '../../../../components/custom_contanier_pop_widget.dart';
 import '../../../../constant/color_manger.dart';
@@ -131,8 +132,7 @@ class _TrackOrderScreenState extends State<TrackOrderScreen> {
                             ),
                             child: Row(
                               children: [
-                                Image.asset(
-                                    'assets/images/Photo_Profile_search.png'),
+                                Image.asset(ImageManger.kOmar),
                                 const SizedBox(width: 20),
                                 Column(
                                   mainAxisAlignment: MainAxisAlignment.center,

@@ -42,7 +42,7 @@ class Profile extends StatelessWidget {
                   ),
                   child: const MassageProfileWidget(
                     image: 'assets/images/Photo.png',
-                    titel: 'Profile',
+                    title: 'Profile',
                   ),
                 ),
                 const SizedBox(
@@ -56,7 +56,7 @@ class Profile extends StatelessWidget {
                   ),
                   child: const MassageProfileWidget(
                     image: 'assets/images/Photo_Restaurant.png',
-                    titel: 'Detail product',
+                    title: 'Detail product',
                   ),
                 ),
                 const SizedBox(
@@ -70,7 +70,7 @@ class Profile extends StatelessWidget {
                   ),
                   child: const MassageProfileWidget(
                     image: 'assets/images/Photo_Menu.png',
-                    titel: 'Detailmenu',
+                    title: 'Detailmenu',
                   ),
                 ),
               ],

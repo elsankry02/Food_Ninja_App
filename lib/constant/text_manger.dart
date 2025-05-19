@@ -17,12 +17,12 @@ abstract class TextManger {
     fontFamily: 'BentonSans Bold',
     color: ColorManger.kPrimaryColor,
   );
-  static const textstyle25Bold = TextStyle(
-    fontSize: 25,
-    fontFamily: 'BentonSans Bold',
-  );
   static const textstyle27Bold = TextStyle(
     fontSize: 27,
+    fontFamily: 'BentonSans Bold',
+  );
+  static const textstyle25Bold = TextStyle(
+    fontSize: 25,
     fontFamily: 'BentonSans Bold',
   );
   static const textstyle22Bold = TextStyle(

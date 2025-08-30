@@ -16,6 +16,8 @@ The Food Ninja App is a modern food delivery application developed using Flutter
 
 **AutoRoute:** Utilizes AutoRoute for type-safe and declarative routing, simplifying navigation.
 
+**Theme Switching:** Supports dynamic switching between light and dark themes, enhancing user personalization.
+
 ## 🔍 Key Features
 
 **User Authentication:** Supports secure sign-in and registration processes.
@@ -55,4 +57,5 @@ The Food Ninja App is a modern food delivery application developed using Flutter
 **Notifications:** Receive updates on order status and promotions.
 
 **Promo Codes:** Apply discount codes during checkout.
+
 

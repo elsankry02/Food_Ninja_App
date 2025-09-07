@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+
+import '../constant/app_text.dart';
+
+class CustomTextField extends StatelessWidget {
+  const CustomTextField(
+      {super.key, required this.labelText, required this.assetIcon});
+  final String labelText;
+  final String assetIcon;
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 25),
+      child: TextField(
+        decoration: InputDecoration(
+          hintText: labelText,
+          hintStyle: AppText.textstyle14Regular,
+          contentPadding:
+              const EdgeInsets.symmetric(vertical: 17, horizontal: 20),
+          prefixIcon: UnconstrainedBox(
+            child: SvgPicture.asset(assetIcon, height: 24, width: 24),
+          ),
+          filled: true,
+          fillColor: theme.primaryColor,
+          enabledBorder: signupBorder(theme.primaryColor),
+          focusedBorder: signupBorder(theme.primaryColor),
+        ),
+      ),
+    );
+  }
+
+  OutlineInputBorder signupBorder(Color theme) {
+    return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(15),
+      borderSide: BorderSide(
+        color: theme,
+      ),
+    );
+  }
+}

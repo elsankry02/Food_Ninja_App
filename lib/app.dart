@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'constant/color_manger.dart';
-import 'features/home_page/data/cubit/change_theme_cubit.dart';
-import 'features/splash_page/splash_view.dart';
+import 'core/constant/app_color.dart';
+import 'features/data/cubit/change_theme_cubit.dart';
+import 'features/presentation/splash_page/splash_view.dart';
 
 class FoodNinja extends StatelessWidget {
   const FoodNinja({super.key});
@@ -20,19 +20,19 @@ class FoodNinja extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
-                scaffoldBackgroundColor: ColorManger.kMaterialWhiteColor,
-                cardColor: ColorManger.kMaterialWhiteColor,
-                focusColor: ColorManger.kMaterialWhiteColor,
-                primaryColor: ColorManger.kMaterialWhiteColor,
+                scaffoldBackgroundColor: AppColors.kMaterialWhiteColor,
+                cardColor: AppColors.kMaterialWhiteColor,
+                focusColor: AppColors.kMaterialWhiteColor,
+                primaryColor: AppColors.kMaterialWhiteColor,
                 hintColor: Colors.black),
             themeMode:
                 themeSaved ?? themeIsDark ? ThemeMode.dark : ThemeMode.light,
             darkTheme: ThemeData.dark().copyWith(
               scaffoldBackgroundColor: Colors.black,
               cardColor: Colors.grey,
-              focusColor: ColorManger.kMaterialBlackColor,
-              primaryColor: ColorManger.kMaterialBlackColor,
-              hintColor: ColorManger.kMaterialWhiteColor,
+              focusColor: AppColors.kMaterialBlackColor,
+              primaryColor: AppColors.kMaterialBlackColor,
+              hintColor: AppColors.kMaterialWhiteColor,
             ),
             home: const SplashView(),
           );
